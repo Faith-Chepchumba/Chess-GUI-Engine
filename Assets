@@ -1,0 +1,33 @@
+Assets Directory
+
+/assets
+
+├── white_pawn.png
+
+├── black_rook.png
+
+└── ...  *// Other piece images*
+
+**8. Building the Project**
+
+If you’re using **CMake**, your CMakeLists.txt can look something like this:
+
+cmake_minimum_required(VERSION 3.10)
+
+project(ChessGame)
+
+set(CMAKE_CXX_STANDARD 11)
+
+*# Find SDL2*
+
+find_package(SDL2 REQUIRED)
+
+include_directories(${SDL2_INCLUDE_DIRS})
+
+*# Add executable*
+
+add_executable(ChessGame src/main.cpp src/board.cpp src/piece.cpp src/input_handler.cpp src/textures.cpp)
+
+*# Link libraries*
+
+target_link_libraries(ChessGame ${SDL2_LIBRARIES})

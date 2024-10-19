@@ -1,0 +1,39 @@
+/chess_game
+
+├── src
+
+│   ├── main.cpp                       # Main game loop and entry point
+
+│   ├── board.cpp                      # Chessboard rendering and logic
+
+│   ├── board.h                        # Header file for the chessboard
+
+│   ├── piece.cpp                      # Piece class implementations
+
+│   ├── piece.h                        # Header file for pieces (e.g., Pawn, Rook, etc.)
+
+│   ├── input_handler.cpp              # Input handling
+
+│   ├── input_handler.h                # Header file for input handling
+
+│   ├── ai.cpp                         # AI logic (if needed)
+
+│   ├── ai.h                           # Header file for AI
+
+│   └── textures.cpp                   # Texture loading functions
+
+│       └── textures.h                 # Header file for texture loading
+
+├── assets                              # Folder for images (e.g., piece images)
+
+│   ├── white_pawn.png
+
+│   ├── black_rook.png
+
+│   └── ...                            # Other piece images
+
+├── include                             # Folder for external libraries (SDL, SFML)
+
+├── CMakeLists.txt                     # CMake configuration file (if using CMake)
+
+└── Makefile                           # Makefile for building the project
